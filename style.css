@@ -49,12 +49,10 @@
     transition: 2s;
 }
 .ex-5-square:hover {
-  width: 120px;
-  height: 120px;
+  transform: scale(2);
 }
 .ex-5-square:active {
-  width: 30px;
-  height: 30px;
+  transform: scale(0.5);
 }
 /* quinto finito */
 .ex-6-img, .ex-7-img, .ex-8-img {
@@ -65,29 +63,54 @@
   filter: grayscale(1);
 }
 .ex-7-img:hover{
-  filter: sepia(1) opacity(0.8%);
+  filter: sepia(0.5) opacity(0.9%);
 }
 .ex-8-img:hover {
   border-radius: 20px;
-  filter: blur(5px) grayscale(100%);
+  filter: blur(0.5px) grayscale(100%);
 }
 /* sesto-settimo-ottavo finito */
 .ex-9-img {
-    margin: 50px 100px;
-    width: 400px;
-    transition: 2s;
+  margin: 50px 100px;
+  width: 400px;
+  transition: 2s;
+  background: red;
 }
 .ex-9-img:hover {
   border-radius: 20px;
-  width: 600px;
-
+  filter: blur(0.5px) sepia(0.5);
+  transform: scale(1.5);
 }
-
+/* nono finito */
 .ex-10-icon {
     font-size: 60px;
 }
+
+.ex-10-icon {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+   transform: rotate(1turn);
+  }
+}
+/* decimo finito */
 .ex-11-icon {
-    font-size: 60px;
+  font-size: 60px;
+}
+.ex-11-icon:hover {
+  animation: spinabc 2s linear;
+}
+  @keyframes spinabc {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
